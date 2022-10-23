@@ -1,6 +1,7 @@
- let count=0;
+let count=0;
+let num = 15;
     for (let x=0;x<=15;x++){
-        if (15%x==2){
+        if (num%2==0){
          count++;
         }
     }
@@ -12,16 +13,11 @@
 
 
 let str="nrupul"
-let N=6
 let bag="";
-    for (let i=0;i<N/2;i++){
-        
-        
-        
-    if (str[i]==str[N-1-i]){
+    for(i=(str.length-1); i>=0; i--){
+        bag+=str[i];
+   }   
+    if (str==bag){
         console.log("Yes")
     }else {
         console.log("No")
-    }break;
-    
-}
